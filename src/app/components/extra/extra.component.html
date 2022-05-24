@@ -1,0 +1,46 @@
+<div class="extra-wrap">
+    <div>
+        <img class="img-extra" src="{{data.photo[+(post?.id + '')-1].url}}" alt="">
+    </div>
+    <div class="post-data">
+        <div class="post-title">
+            {{ post?.title | slice:0:1 | titlecase }}{{ post?.title }} 
+        </div>
+        <div class="post-body">
+            <p class="body">
+                {{post?.body}} Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque optio modi 
+                ratione quaerat voluptatem nemo, perspiciatis ipsam minima necessitatibus. Omnis temporibus
+                 harum corrupti ut neque quibusdam dolores laudantium, ipsum tenetur aut animi porro facilis 
+                 natus ex illo placeat ipsam amet dolore quia est iusto provident a praesentium repellendus?
+                 Quae sint voluptatem exercitationem perferendis vero quam temporibus enim animi rerum suscipit
+                  autem adipisci facere assumenda deserunt excepturi laboriosam quas sit accusamus dolore sed 
+                  dolorum cum, odit quod. Magni veritatis, omnis dolore totam at, neque quas voluptas aliquam 
+                  inventore veniam quasi! Vitae obcaecati minima quaerat. Velit et maxime dicta! Explicabo, 
+                  fugiat. Ea repudiandae illo dolorem recusandae iure, aspernatur aliquam nesciunt. Officia 
+                  aliquam accusamus dignissimos atque laudantium fugit rerum error temporibus soluta molestias
+                   vero quos consequatur quod sunt, deserunt necessitatibus in, id et nesciunt iste nulla 
+                   qui quo. Aut dolores labore vel totam commodi nostrum, laborum sed ducimus libero quos 
+                   earum animi odio omnis maxime, similique minus, harum fuga unde alias amet ipsum quaerat!
+                    Expedita harum, unde assumenda totam dolore voluptatibus exercitationem impedit 
+                    repudiandae fuga dignissimos consequuntur ipsam molestias blanditiis! Perspiciatis, 
+                    sunt consectetur! Natus culpa quia, repudiandae, deserunt accusamus pariatur corporis minus
+                     illo, doloremque dolor recusandae sint modi assumenda voluptatibus distinctio tempora 
+                     debitis magni? Esse ratione quod voluptas repellat omnis reiciendis, molestiae voluptate 
+                     accusantium rerum numquam harum nesciunt assumenda qui. Impedit molestiae porro magni,
+                      alias, officia itaque magnam voluptas repellendus architecto pariatur id corporis cumque? 
+                      Nisi quidem adipisci, et beatae accusamus labore harum exercitationem voluptatibus, 
+                      alias optio aspernatur possimus quod dolorem dolores molestias ratione illum? Debitis
+                      nam modi commodi deleniti cupiditate quaerat quis. Doloremque aliquid laudantium libero
+                       culpa modi. Soluta illo excepturi nihil magnam voluptatum reiciendis vitae atque 
+                       laudantium. Blanditiis, ducimus quas. Et, ab, totam magni blanditiis ducimus nam maiores,
+                        a voluptatem dolorem obcaecati neque. Repellendus culpa perspiciatis doloremque? Sint
+                         ab deserunt mollitia?
+            </p>
+        </div>
+    </div>
+    <div class="back-btn">
+            <img class="img-arrow" src="./assets/arrow-icon-4.png" alt="">
+        <a class="back" (click)="onBack()">Back to homepage</a>
+    </div>
+  
+</div>

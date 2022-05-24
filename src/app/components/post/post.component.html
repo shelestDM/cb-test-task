@@ -1,0 +1,31 @@
+<div >
+  <p class="search-result">Results: {{(data.posts | searchPosts: data.searchStr).length }}</p>
+  <div class="line"></div>
+</div>
+<div class="wrapper">
+    <div  *ngFor="let post of data.posts | searchPosts: data.searchStr" class="post-wrap">
+            <div class="img-wrap">
+               <img class="img-post" src="{{data.photo[post.id-1].url}}" alt="">
+            </div>
+            <div class="data-wrap">
+                    <img class="calendar-icon" src="./assets/calendar-icon.jpg" alt="calendar-image">
+                   <div class="date">
+                    {{ day | date : 'dd.MMM.yyyy' }}
+                   </div>
+            </div>
+            <div class="title-wrap">
+                <div innerHtml="{{ post.title | slice:1:40 | highlight: data.searchStr}}"></div>
+            </div>
+            <div class="body-wrap">
+                <div innerHtml="{{ post.body | highlight: data.searchStr }}"></div> 
+            </div>
+            <div class="extra">
+                <a class="router" [routerLink]="['/posts', post.id-1]">Read more</a>
+                <div class="arrow-wrap">
+                   <img class="img-arrow" src="./assets/arrow-icon-3.png" alt="">
+                </div>
+            </div>
+     </div>
+</div>
+
+

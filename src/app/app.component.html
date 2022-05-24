@@ -1,0 +1,8 @@
+<div *ngIf="data.key2 && data.key1; else loading">
+  <router-outlet></router-outlet>
+</div>
+<ng-template #loading>
+    <div>
+        <h3>Loading Posts...</h3>
+    </div>
+</ng-template>
